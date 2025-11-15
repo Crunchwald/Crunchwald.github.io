@@ -2,14 +2,8 @@
 <html lang="en">
 <body>
 <div id="crunchwald">CRUNCHWALD</div>
-  <div id="subcrunchwald">math quizzes and study guides</div>
+  <div id="subcrunchwald">Phono-Malayic</div>
 SAMPLE QUESTION:<br>
-  <i>0</i> = 5x&sup2; - 9x + 4. x = ? Format like x = _ and x = __. The first value stated should always be less than the first. <em>HINT: Use the quadratic formula.</em>
-  <input type="text" id="inputArea" name="inputArea">
-  <br>
-  <button type="button" onclick="enterSubmission()">SUBMIT</button>
-  <p id="congrats"></p>
-  <p hidden id="os">ibgh</p>
 <style>
   #crunchwald {
     font-family: "Lucida Console";
@@ -19,25 +13,3 @@ SAMPLE QUESTION:<br>
     font-family: "Lucida Console:;
     font-size: 125%;
 </style>
-<script>
-  function enterSubmission() {
-    const inputArea = document.getElementById('inputArea').value;
-    const congrats = document.getElementById('congrats');
-    var os = document.getElementById('os');
-
-    if (inputArea === 'x = -0.8 and x = 1') {
-      congrats.textContent = 'Congratulations! That's correct!';
-      congrats.style.color = 'green';
-    } else {
-      congrats.textContent = 'Sorry, that's incorrect please try again.'
-      congrats.style.color = 'red';
-    }
-    if (inputArea === 'opensesame') {
-    os.style.display = "block";
-  } else {
-    os.style.display = "none";
-  }
-}
-    }
-    }
-</script>
